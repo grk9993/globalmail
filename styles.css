@@ -1,0 +1,103 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    header nav ul li {
+      margin-right: 20px;
+    }
+    header nav a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    section {
+      background-color: #ffffff;
+      padding: 2rem;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #3498db;
+    }
+    button {
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2e6da4;
+    }
+   .card-deck {
+      display: flex;
+      justify-content: space-between;
+    }
+   .card {
+      background-color: #ffffff;
+      padding: 1rem;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 30%;
+    }
+   .card:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease-in-out;
+    }
+   .input-box {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-bottom: 10px;
+    }
+   .input-box:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+   .input-box:focus {
+      animation: focus-animation 0.5s ease-in-out;
+    }
+    @keyframes focus-animation {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+   .submit-btn {
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+   .submit-btn:hover {
+      background-color: #2e6da4;
+    }
