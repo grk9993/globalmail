@@ -20,23 +20,41 @@
         <section id="home">
           <h1>Welcome to Global Mail</h1>
           <p>We provide fast, reliable, and secure mail services worldwide.</p>
-          <button>Learn More</button>
+          <div class="button-container">
+            <button class="learn-more">Learn More</button>
+          </div>
         </section>
         <section id="services">
           <h2>Our Services</h2>
-          <div class="card-deck">
-            <div class="card">
-              <h3>Express Mail</h3>
-              <p>Fast and reliable mail service</p>
+          <div class="card-container">
+            <button class="left-arrow">&#10094;</button>
+            <div class="cards">
+              <div class="card" style="background-color: #ff69b4;">
+                <h3>Express Mail</h3>
+                <p>Fast and reliable mail service</p>
+              </div>
+              <div class="card" style="background-color: #33cc33;">
+                <h3>Priority Mail</h3>
+                <p>High-priority mail service for important documents</p>
+              </div>
+              <div class="card" style="background-color: #6666ff;">
+                <h3>International Mail</h3>
+                <p>Mail service for international destinations</p>
+              </div>
+              <div class="card" style="background-color: #ffff66;">
+                <h3>Courier Service</h3>
+                <p>Fast and secure courier service for packages</p>
+              </div>
+              <div class="card" style="background-color: #cc3333;">
+                <h3>Parcel Service</h3>
+                <p>Reliable parcel service for large packages</p>
+              </div>
+              <div class="card" style="background-color: #33cccc;">
+                <h3>Freight Service</h3>
+                <p>Efficient freight service for large shipments</p>
+              </div>
             </div>
-            <div class="card">
-              <h3>Priority Mail</h3>
-              <p>High-priority mail service for important documents</p>
-            </div>
-            <div class="card">
-              <h3>International Mail</h3>
-              <p>Mail service for international destinations</p>
-            </div>
+            <button class="right-arrow">&#10095;</button>
           </div>
         </section>
         <section id="contact">
@@ -45,7 +63,9 @@
             <input type="text" placeholder="Name" class="input-box">
             <input type="email" placeholder="Email" class="input-box">
             <textarea placeholder="Message" class="input-box"></textarea>
-            <button class="submit-btn">Send</button>
+            <div class="button-container">
+              <button class="send-button">Send</button>
+            </div>
           </form>
         </section>
       </main>

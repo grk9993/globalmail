@@ -5,7 +5,7 @@ body {
       background-color: #f7f7f7;
     }
     header {
-      background-color: #3498db;
+      background: linear-gradient(to right, #3498db, #7a288a);
       color: #ffffff;
       padding: 1rem;
       text-align: center;
@@ -35,11 +35,16 @@ body {
       padding: 2rem;
       margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
     }
     h1 {
       color: #3498db;
     }
-    button {
+   .button-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+   .learn-more {
       background-color: #3498db;
       color: #ffffff;
       border: none;
@@ -47,25 +52,38 @@ body {
       font-size: 16px;
       cursor: pointer;
     }
-    button:hover {
+   .learn-more:hover {
       background-color: #2e6da4;
     }
-   .card-deck {
+   .card-container {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+    }
+   .left-arrow,.right-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+   .cards {
+      position: relative;
+      width: 100%;
+      height: 200px;
     }
    .card {
-      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       padding: 1rem;
-      margin: 10px;
       border: 1px solid #ddd;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 30%;
+      display: none;
     }
-   .card:hover {
-      transform: scale(1.1);
-      transition: all 0.5s ease-in-out;
+   .card.active {
+      display: block;
     }
    .input-box {
       padding: 10px;
@@ -89,7 +107,7 @@ body {
         transform: scale(1.1);
       }
     }
-   .submit-btn {
+   .send-button {
       background-color: #3498db;
       color: #ffffff;
       border: none;
@@ -98,6 +116,6 @@ body {
       cursor: pointer;
       border-radius: 10px;
     }
-   .submit-btn:hover {
+   .send-button:hover {
       background-color: #2e6da4;
     }
